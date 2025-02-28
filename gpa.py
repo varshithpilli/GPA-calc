@@ -11,11 +11,12 @@ grade_dict = {
     "e": 5
 }
 
+Print("Enter the following details for the current semester for each course.")
 while True:
-    c = float(input("Credits: "))
+    c = float(input("Course credits: "))
     if c == 0:
         break
-    g = input("Grade: ").lower()
+    g = input("Course Grade: ").lower()
     credits.append(c)
     grades.append(g)
 
