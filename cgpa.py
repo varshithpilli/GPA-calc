@@ -17,4 +17,4 @@ for i,j in zip(credits, grades):
 total_credits = total_prev_credits + current_credits
 total_grades = total_prev_grades + (current_credits*current_grades)
 
-print(f' Your CGPS is : {total_grades/total_credits}')
+print(f' Your CGPA is : {total_grades/total_credits}')
