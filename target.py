@@ -8,12 +8,15 @@ for i, j in zip(credits, grades):
     trial += mul
 
 curr_credits = float(input("Enter current sem credits: "))
+final_target = float(input("Enter how much you wish in the final: "))
 total_prev_credits = sum(credits)
 
 total_credits = total_prev_credits + curr_credits
 
-target = (9.10*total_credits) - trial
+target = (final_target*total_credits) - trial
 
 target /= curr_credits
+
+# sem5 = 23.5
 
 print(target)

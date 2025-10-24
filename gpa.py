@@ -11,7 +11,7 @@ grade_dict = {
     "e": 5
 }
 
-Print("Enter the following details for the current semester for each course.")
+print("Enter the following details for the current semester for each course.")
 while True:
     c = float(input("Course credits: "))
     if c == 0:
