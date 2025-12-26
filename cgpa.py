@@ -1,20 +1,21 @@
-# Make sure the order in credits and GPAs is maintained as it affects the final calculation.
-# Example:
-# list = [first_sem, second_sem, third_sem, .....]
+curr_credits = float(input("Enter the current sem credits: "))
+curr_GPA = float(input("Enter the current sem GPA: "))
 
-# Credits of the previous semesters already stored in a list
-credits = [19.5, 18.5, 28.5]
-# GPAs of the previous semesters already stored in a list
-grades = [8.0, 9.0, 9.47]
+credits = [19.5, 18.5, 28.5, 22.5]
+grades = [8.0, 9.0, 9.47, 9.16]
 
-current_credits = float(input("Enter the current semester credits: "))
-current_grades = float(input("Enter the current semester GPA: "))
-total_prev_credits = sum(credits)
-total_prev_grades = 0.0
-for i,j in zip(credits, grades):
-    total_prev_grades += i*j
+prev_GP = 0.0
+prev_credits = sum(credits)
 
-total_credits = total_prev_credits + current_credits
-total_grades = total_prev_grades + (current_credits*current_grades)
+for credit, grade in zip(credits, grades):
+    temp_GP = credit * grade
+    prev_GP += temp_GP
 
-print(f' Your CGPA is : {total_grades/total_credits}')
+total_credits = prev_credits + curr_credits
+total_GP = prev_GP + (curr_credits * curr_GPA)
+
+CGPA = total_GP/total_credits
+
+print(f'Your CGPA after this sem: {CGPA}')
+
+# sem5 = 23.5
