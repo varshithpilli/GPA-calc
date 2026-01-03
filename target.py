@@ -1,8 +1,8 @@
 curr_credits = float(input("Enter current sem credits: "))
 final_target = float(input("Enter target CGPA after current sem: "))
 
-credits = [19.5, 18.5, 28.5, 22.5]
-grades = [8.0, 9.0, 9.47, 9.16]
+credits = [19.5, 18.5, 28.5, 22.5, 23.5]
+grades = [8.0, 9.0, 9.47, 9.16, 9.32]
 
 prev_GP = 0.00
 prev_credits = sum(credits)

@@ -23,17 +23,17 @@ grade_dict = {
 
 # ----------- hardcoded ---------------
 courses = [
-    (3, 'a'),   # Controls Theory
-    (3, 's'),   # Cloud Theory
-    (3, 'a'),   # MGT Theory
+    (3, 'a'),   # Embedded Theory
     (1.5, 's'), # STS
-    (3, 'a'),   # Prob Theory
-    (3, 'a'),   # Software Theory
-    (3, 'a'),   # DAA Theory
-    (1, 's'),   # Prob LAB
-    (1, 's'),   # Software LAB
-    (1, 'a'),   # Controls LAB
-    (1, 's')    # DAA LAB
+    (3, 's'),   # Crypto Theory
+    (2, 'a'),   # CPS Theory
+    (3, 'a'),   # AI Theory
+    (3, 'a'),   # Compiler Theory
+    (3, 'a'),   # ML Theory
+    (1, 's'),   # Crypto LAB
+    (1, 's'),   # CPS LAB
+    (1, 's'),   # Compiler LAB
+    (1, 's')    # ML LAB
 ]
 credits = list(c for c, _ in courses)
 grades = list(g for _, g in courses)
@@ -50,6 +50,3 @@ for credit, grade in zip(credits, grades):
 
 GPA = total_GP / total_credits
 print(f'Your GPA this sem: {GPA}')
-
-# If cloud A - 9.191489361702128 - 9.017
-# If cloud S - 9.319148936170214 - 9.044
